@@ -26,6 +26,7 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'Valloric/YouCompleteMe'
 
 call neobundle#end()
@@ -75,8 +76,10 @@ set autoread "如果正在编辑的文件在打开后又有其他程序更新，
 
 "【插件】airline 配置
 let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_powerline_fonts = 1
-" let g:airline_theme = "molokai"
+let g:airline_theme = "luna"
 set encoding=utf-8
 set laststatus=2
 set encoding=utf-8
