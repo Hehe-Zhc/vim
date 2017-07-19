@@ -53,6 +53,7 @@ set ts=4
 set sw=4
 set expandtab "开启Tab转空格的操作
 set tabstop=4 "Tab表示成4个空格
+set pastetoggle=<F9>
 "高亮行
 set cursorline
 "去掉左右边的滚动条
@@ -80,6 +81,9 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme = "luna"
+"设置切换Buffer快捷键"
+nnoremap <C-N> :bn<CR>
+nnoremap <C-M> :bp<CR>
 set encoding=utf-8
 set laststatus=2
 set encoding=utf-8
